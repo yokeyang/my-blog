@@ -1,0 +1,17 @@
+{
+  "name": "robot",
+  "version": "1.0.0",
+  "description": "",
+  "proxy": "http://localhost:3001/",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server.js",
+    "client": "node start-client.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "express": "^4.15.4"
+  }
+}

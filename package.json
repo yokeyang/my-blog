@@ -1,0 +1,17 @@
+{
+  "name": "my-blog",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "concurrently \"supervisor server\" \"npm run client\"",
+    "server": "node server.js",
+    "client": "node start-client.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "express": "^4.15.4",
+    "qiniu": "^7.0.8"
+  }
+}
