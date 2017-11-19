@@ -95,16 +95,18 @@ const styles = theme => ({
               {props.tag1}
             </Button>
           </Link>
-          <Link to = {`/blog/tag/${props.tag2}`}>
-            <Button children = "button" aria-label="tag3" color="accent" className = {classes.button}>
-              {props.tag2}
-            </Button>
-          </Link>
-          <Link to = {`/blog/tag/${props.tag3}`}>
-            <Button children = "button" aria-label="tag3" color="accent" className = {classes.button}>
-              {props.tag3}
-            </Button>
-          </Link>
+          {props.tag2 == null?'':
+            <Link to = {`/blog/tag/${props.tag2}`}>
+              <Button children = "button" aria-label="tag2" color="accent" className = {classes.button}>
+                {props.tag2}
+              </Button>
+            </Link>}
+            {props.tag3 == null?'':
+              <Link to = {`/blog/tag/${props.tag3}`}>
+                <Button children = "button" aria-label="tag3" color="accent" className = {classes.button}>
+                  {props.tag3}
+                </Button>
+              </Link>}
           <div className={classes.flexGrow} />
           <IconButton
             className={classnames(classes.expand, {

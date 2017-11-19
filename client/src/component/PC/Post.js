@@ -89,7 +89,8 @@ class MyEditor extends React.Component {
       this.setState({ snackopen: false });
     };
     handlePost = data => () =>{
-      if(this.psd.value !== 123){
+      console.log(this.psd.value !== 123)
+      if(this.psd.value !== '123'){
         this.setState({errormsg:'標識碼錯誤',snackopen:true})
         return false
       }

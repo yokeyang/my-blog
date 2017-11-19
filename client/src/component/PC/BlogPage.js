@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Link} from 'react-router-dom'
 class BlogPage extends Component{
   render(){
     const {blog} = this.props
+    console.log(blog)
     return(
       <div className = "inner BlogPage">
         <btitle className = "BlogTitle">{blog.title}</btitle>

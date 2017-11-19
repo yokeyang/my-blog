@@ -3,6 +3,9 @@
   text-shadow: none;
   background: #cbeafb;
 }
+html{
+  overflow-x: hidden;
+}
 * {
   box-sizing: inherit;
 }
@@ -33,7 +36,7 @@ h3 a:hover{
   color: #f44336;
 }
 .inner{
-  width: 100%;
+  width: 100vw;
   max-width: 1040px;
   padding: 0 1rem;
   margin: 0 auto;
@@ -154,7 +157,7 @@ blockquote {
   padding: 5px 10px;
   margin: 10px 0;
   line-height: 1.4;
-  font-size: 100%;
+  font-size: 100vw;
   background-color: #f1f1f1;
 }
 
@@ -200,9 +203,12 @@ pre code {
   .footer{
     padding-left: 0;
   }
+  .Blog-button-34{
+    margin: 0 !important;
+  }
 }
 .notfound{
   min-height: 600px;
-  width: 100%;
+  width: 100vw;
   text-align: center;
 }

@@ -23,10 +23,10 @@ const Routers = ({ match, location, history }) => {
       console.log("error");
   })})()
   const renderBlogPage = ({match}) =>(
-    <BlogPage blog = {blogs.find(current => current.id === match.params.id)} />
+    <BlogPage blog = {blogs.find(current => current.id == match.params.id)} />
   )
   const renderTag = ({match}) =>(
-    <BlogPreview blogs = {blogs.filter(current => (current.tag1 === match.params.tag))} />
+    <BlogPreview blogs = {blogs.filter(current => (current.tag1 === match.params.tag||current.tag2 === match.params.tag||current.tag3 === match.params.tag))} />
   )
   const renderAuthor = ({match}) =>(
     <BlogPreview blogs = {blogs.filter(current => (current.author === match.params.author))} />
